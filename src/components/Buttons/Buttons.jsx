@@ -11,11 +11,7 @@ export const Buttons = () => {
 		setBtnValue(value)
 	}
 	const showValueHandler = () => {
-		if (btnValue) {
-			setShowValue(true)
-		} else {
-			setShowValue(false)
-		}
+		return btnValue ? setShowValue(true) : setShowValue(false)
 	}
 
 	return (
